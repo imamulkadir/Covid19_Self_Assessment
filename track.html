@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Self Assesment System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container ccustom">
+        <div class="row row-content">
+            <div class="col-12 text-center">
+                <h1>COVID-19 Self Assessment System</h1>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <div class="main">
+                    <form>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" value="" id="age" placeholder="Enter your age">
+                        </div>
+                        <div class="form-group">
+                            <label>Sex</label>
+                            <br>
+                            <label class="radio-inline">
+                                <input type="radio" id="Male" name="gender" value="Male">
+                                <label for="Male">Male</label>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="Female" name="gender" value="Female">
+                                <label for="Female">Female</label>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="bodytemp">Body Temperature</label>
+                            <input type="text" class="form-control" id="temp" value="" placeholder="Enter body temperature in fahrenheit">
+                        </div>
+                    </form>
+                    <button id="step1" class="btn btn-primary">Next</button>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <div class="step2" style="display:none;">
+                    <form>
+                        <div class="form-group">
+                            <label for="age">Which syptomps you have shown below?</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="sym1">
+                            <label class="form-check-label" for="inlineCheckbox1">Breathing problem</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" name="sym1">
+                            <label class="form-check-label" for="inlineCheckbox2">Dry cough</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" name="sym1">
+                            <label class="form-check-label" for="inlineCheckbox3">Sore throat</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" name="sym1">
+                            <label class="form-check-label" for="inlineCheckbox3">Weakness</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5" name="sym1">
+                            <label class="form-check-label" for="inlineCheckbox3">Runny nose</label>
+                        </div>
+                    </form>
+                    <a id="step2" href="#"><button class="btn btn-primary">Next</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <div class="step3" style="display:none;">
+                    <div class="syms">
+                        <form>
+                            <div class="form-group">
+                                <label for="age">Which syptomps you have shown below?</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox1">Abdominal pain</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox2">Vomiting</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox3">Diarrhoea</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox3">Chest pain or pressure</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox3">Muscle pain</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option6" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox3">Loss of taste or smell</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option7" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox3">Rash on skin, or discoloration of fingers or toes</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option8" name="sym2">
+                                <label class="form-check-label" for="inlineCheckbox3">Loss of speech or movement</label>
+                            </div>
+                        </form>
+                        <button id="step3" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <div class="result" style="display: none">
+                    <div class="report">
+                        <div class="info">
+
+                        </div>
+                        <div class="safe">
+                            <h4>Report :<span style="color:#5cb85c;"> Covid-19 'Negative' </span></h4>
+                            <h3>Stay Home Stay Safe</h3>
+                        </div>
+                        <div class="warning">
+                            <h4>Report :<span style="color:#f0ad4e;"> Possible Covid-19 'Positive' </span></h4>
+                            <h3>Stay isolated and consult with a doctor</h3>
+                        </div>
+                        <div class="unsafe">
+                            <h4>Report : <span style="color:#d9534f;"> High possibility of Covid-19 'Positive' </span></h4>
+                            <h3>Stay isolated, Immediately with a doctor</h3>
+                        </div>
+                        <div class="danger">
+                            <h4>Report : <span style="color:#d9534f;"> Very high possibility of Covid-19 'Positive' </span></h4>
+                            <h3><strong class="text-danger">Stay isolated and consult with a doctor </strong></h3>
+                        </div>
+                    </div>
+                    <div id="list">
+                        <h4>For More...</h4>
+                        <img src="./img/hc.jpg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <a class="btn btn-success btn-lg active customButton2" id="step2" href="index.html">Start Over</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer class="page-footer font-small text-center">
+            <p>
+                This COVID-19 Self Assessment System is only for software development purpose and may not yield actual result.
+                <br>Any information given by users of this system will not be disclosed or store to anywhere.
+            </p>
+        </footer>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
